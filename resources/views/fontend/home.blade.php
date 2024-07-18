@@ -1,0 +1,2 @@
+@extends('fontend/layouts/master')
+

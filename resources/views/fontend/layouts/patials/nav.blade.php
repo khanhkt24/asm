@@ -1,0 +1,79 @@
+<a class="navbar-brand order-1" href="home">
+    <img class="img-fluid" width="100px" src="fontend/images/logo.png"
+        alt="Reader | Hugo Personal Blog Template">
+</a>
+<div class="collapse navbar-collapse text-center order-lg-2 order-3" id="navigation">
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="home" role="button" data-toggle=""
+                aria-haspopup="true" aria-expanded="false">
+                Trang chủ
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about" role="button" data-toggle=""
+                aria-haspopup="true" aria-expanded="false">
+                Giới thiệu
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="contact">Liên hệ</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Thể loại <i class="ti-angle-down ml-1"></i>
+            </a>
+            <div class="dropdown-menu">
+
+                <a class="dropdown-item" href="post-details.html">Tin mới nhất</a>
+
+                <a class="dropdown-item" href="post-elements.html">Thể thao</a>
+
+                <a class="dropdown-item" href="tags.html">Kinh doanh</a>
+
+                <a class="dropdown-item" href="search-result.html">Xã hội</a>
+
+                <a class="dropdown-item" href="search-not-found.html">Thế giới</a>
+
+                <a class="dropdown-item" href="privacy-policy.html">Giải trí</a>
+
+                <a class="dropdown-item" href="terms-conditions.html">Sức khỏe</a>
+
+                <a class="dropdown-item" href="terms-conditions.html">Việc làm</a>
+
+                <a class="dropdown-item" href="terms-conditions.html">Giáo dục</a>
+
+                <a class="dropdown-item" href="terms-conditions.html">An ninh</a>
+
+                <a class="dropdown-item" href="terms-conditions.html">Pháp luật</a>
+
+                <a class="dropdown-item" href="404.html">404 Page</a>
+
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="login">Đăng nhập</a>
+        </li>
+    </ul>
+</div>
+
+<div class="order-2 order-lg-3 d-flex align-items-center">
+    <select class="m-2 border-0 bg-transparent" id="select-language">
+        <option id="en" value="" selected>VN</option>
+        <option id="fr" value="">EN</option>
+    </select>
+
+    <!-- search -->
+    <form class="search-bar">
+        <input id="search-query" name="s" type="search"
+            placeholder="Nhập &amp; từ cần tìm kiếm">
+    </form>
+
+    <button class="navbar-toggler border-0 order-1" type="button" data-toggle="collapse"
+        data-target="#navigation">
+        <i class="ti-menu"></i>
+    </button>
+</div>

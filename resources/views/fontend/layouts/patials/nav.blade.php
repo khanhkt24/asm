@@ -27,27 +27,27 @@
             </a>
             <div class="dropdown-menu">
 
-                <a class="dropdown-item" href="post-details.html">Tin mới nhất</a>
+                <a class="dropdown-item" href="tag">Tin mới nhất</a>
 
-                <a class="dropdown-item" href="post-elements.html">Thể thao</a>
+                <a class="dropdown-item" href="tag">Thể thao</a>
 
-                <a class="dropdown-item" href="tags.html">Kinh doanh</a>
+                <a class="dropdown-item" href="tag">Kinh doanh</a>
 
-                <a class="dropdown-item" href="search-result.html">Xã hội</a>
+                <a class="dropdown-item" href="tag">Xã hội</a>
 
-                <a class="dropdown-item" href="search-not-found.html">Thế giới</a>
+                <a class="dropdown-item" href="tag">Thế giới</a>
 
-                <a class="dropdown-item" href="privacy-policy.html">Giải trí</a>
+                <a class="dropdown-item" href="tag">Giải trí</a>
 
-                <a class="dropdown-item" href="terms-conditions.html">Sức khỏe</a>
+                <a class="dropdown-item" href="tag">Sức khỏe</a>
 
-                <a class="dropdown-item" href="terms-conditions.html">Việc làm</a>
+                <a class="dropdown-item" href="tag">Việc làm</a>
 
-                <a class="dropdown-item" href="terms-conditions.html">Giáo dục</a>
+                <a class="dropdown-item" href="tag">Giáo dục</a>
 
-                <a class="dropdown-item" href="terms-conditions.html">An ninh</a>
+                <a class="dropdown-item" href="tag">An ninh</a>
 
-                <a class="dropdown-item" href="terms-conditions.html">Pháp luật</a>
+                <a class="dropdown-item" href="tag">Pháp luật</a>
 
                 <a class="dropdown-item" href="404.html">404 Page</a>
 

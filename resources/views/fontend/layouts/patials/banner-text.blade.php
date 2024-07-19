@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-9 mx-auto">
-            <h1 class="mb-5">What Would You <br> Like To Read Today?</h1>
+            <h1 class="mb-5">Bạn có thích <br> các bài viết hôm nay không?</h1>
             <ul class="list-inline widget-list-inline">
                 <li class="list-inline-item"><a href="tags.html">Tin mới nhất</a></li>
                 <li class="list-inline-item"><a href="tags.html">Thể thao</a></li>

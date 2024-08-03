@@ -28,7 +28,6 @@
                     </div>
                     <div class="type">
                         <input type="password" placeholder="Mật khẩu" name="" id="password">
-
                     </div>
 
                     <div class="forgot">
@@ -55,7 +54,7 @@
 
                         <input type="password" name="" placeholder="Mật khẩu" id="password">
                     </div>
-                    
+
                     <a href="login" class="btn bkg" type="button">Đăng ký</a>
 
                 </form>

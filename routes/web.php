@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\backend\AdminController;
 use App\Http\Controllers\fontend\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,11 @@ Route::get("/tag", [HomeController::class,"tagView"]);
 Route::get("/login", [HomeController::class,"loginView"]);
 Route::get("/detail", [HomeController::class,"detailView"]);
 
+/**
+ * Admin
+ */
+
+Route::get("/admin", [AdminController::class,"admin"])->name("admin");
 
 
 

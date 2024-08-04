@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     public function Admin(){
-        return view("backend.layout.master");
+        // return view("backend.news.listNews");
     }
 }

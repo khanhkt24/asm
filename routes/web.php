@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\backend\AdminController;
+use App\Http\Controllers\backend\NewController;
 use App\Http\Controllers\fontend\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/hahahahah', function () {
     return view('welcome');
 });
 Route::get("/home", [HomeController::class,"index"])->name("home");
@@ -30,6 +31,22 @@ Route::get("/detail", [HomeController::class,"detailView"]);
  */
 
 Route::get("/admin", [AdminController::class,"admin"])->name("admin");
+
+// Route::resource('new', NewController::class);
+// Route::resource('add', NewController::class);
+Route::get("/", [NewController::class,"index"])->name("new.index");
+
+Route::get("/new/create", [NewController::class,"create"])->name("new.create");
+Route::post("/new", [NewController::class,"store"])->name("new.store");
+Route::get("/new/{new}/edit", [NewController::class,"edit"])->name("new.edit");
+Route::put("/new/{new}", [NewController::class,"update"])->name("new.update");
+Route::delete("/new/{new}", [NewController::class,"destroy"])->name("new.destroy");
+
+
+
+
+
+
 
 
 

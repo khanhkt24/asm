@@ -33,4 +33,6 @@ class News extends Model
             ->update($data);
    }
 
+   
+
 }

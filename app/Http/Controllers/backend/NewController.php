@@ -69,7 +69,7 @@ class NewController extends Controller
 
         $this->news->createNews($dataInsert);
 
-        return redirect()->route('new.index');
+        return redirect()->route('admin.home');
     }
 
     /**
@@ -89,7 +89,7 @@ class NewController extends Controller
         $cate = DB::table('categories')->get();
 
         if (!$editCtrl) {
-            return redirect()->route('new.index');
+            return redirect()->route('admin.home');
 
         }
 
@@ -138,7 +138,7 @@ class NewController extends Controller
 
         $editCtrl->updateNews($dataUpdate,$id);
 
-        return redirect()->route('new.index');
+        return redirect()->route('admin.home');
 
     }
 
@@ -151,7 +151,7 @@ class NewController extends Controller
 
 
         if(!$editCtrl){
-            return redirect()->route('new.index');
+            return redirect()->route('admin.home');
         }
 
         if($editCtrl->image){
@@ -159,10 +159,11 @@ class NewController extends Controller
         }
 
         $editCtrl->delete();
-        
-        return redirect()->route('new.index');
 
-
+        return redirect()->route('admin.home');
 
     }
+
+
+
 }

@@ -37,7 +37,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Quản lý tin:</h6>
                 <a class="collapse-item" href="buttons.html">Thêm mới tin</a>
-                <a class="collapse-item" href="{{ route('new.index') }}">Hiển thị tin</a>
+                <a class="collapse-item" href="{{ route('admin.home') }}">Hiển thị tin</a>
                 <a class="collapse-item" href="cards.html">Sửa tin</a>
             </div>
         </div>
@@ -53,8 +53,8 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="utilities-color.html">Colors</a>
+                <h6 class="collapse-header">Quản lý người dùng</h6>
+                <a class="collapse-item" href="{{ route('user.index') }}">List Users</a>
                 <a class="collapse-item" href="utilities-border.html">Borders</a>
                 <a class="collapse-item" href="utilities-animation.html">Animations</a>
                 <a class="collapse-item" href="utilities-other.html">Other</a>
@@ -80,13 +80,17 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Login Screens:</h6>
-                <a class="collapse-item" href="login.html">Login</a>
-                <a class="collapse-item" href="register.html">Register</a>
+                <form action="{{ route('logout') }}" method="post">
+                    @csrf
+
+                    <a class="collapse-item" href=""><button type="submit" class="btn btn-white">Logout</button></a>
+                </form>
+                <a class="collapse-item" href="{{ route('register') }}">Register</a>
                 <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                 <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Logout</h6>
+                {{-- <h6 class="collapse-header">Logout</h6>
                 <a class="collapse-item" href="404.html">404 Page</a>
-                <a class="collapse-item" href="blank.html">Blank Page</a>
+                <a class="collapse-item" href="blank.html">Blank Page</a> --}}
             </div>
         </div>
     </li>

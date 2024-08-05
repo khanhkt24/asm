@@ -25,8 +25,8 @@
                         </li>
                         <li class="list-inline-item">
                             <ul class="card-meta-tag list-inline">
-                                <li class="list-inline-item"><a href="tags.html">Giải trí</a></li>
-                                <li class="list-inline-item"><a href="tags.html">Sức khỏe</a></li>
+                                <li class="list-inline-item"><a href="tag">Giải trí</a></li>
+                                <li class="list-inline-item"><a href="tag">Sức khỏe</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -117,8 +117,8 @@
                         </li>
                         <li class="list-inline-item">
                             <ul class="card-meta-tag list-inline">
-                                <li class="list-inline-item"><a href="tags.html">Giải trí</a></li>
-                                <li class="list-inline-item"><a href="tags.html">Sức khỏe</a></li>
+                                <li class="list-inline-item"><a href="tag">Giải trí</a></li>
+                                <li class="list-inline-item"><a href="tag">Sức khỏe</a></li>
                             </ul>
                         </li>
                     </ul>

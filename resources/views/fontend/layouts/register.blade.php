@@ -23,8 +23,8 @@
     <div class="container">
         <div class="box">
             <div class="form sign_in">
-                <h3>Đăng nhập</h3>
-                <span>Với tài khoản của bạn</span>
+                <h3>Đăng ký</h3>
+                <span>Dùng email của bạn để đăng ký</span>
                 @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul>
@@ -35,26 +35,49 @@
                     </div>
                 @endif
 
-                <form action="{{ route('login') }}" method="post" id="form_input">
+                <form action="{{ route('register') }}" method="post" id="form_input">
                     @csrf
                     <div class="type">
-                        <input type="email" placeholder="Nhập email" name="email" id="email">
+
+                        <input type="text" name="name" placeholder="Tên đăng nhập" id="name">
+                    </div>
+                    <div class="type">
+
+                        <input type="email" name="email" placeholder="Địa chỉ email" id="email">
+                    </div>
+                    <div class="type">
+                        <input type="password" name="password" placeholder="Mật khẩu" id="password">
+                    </div>
+
+                    <div class="type">
+                        <input type="password" name="password_confirmation" placeholder="Mật lại khẩu"
+                            id="password_confirmation">
+                    </div>
+
+                    <button type="submit" class="btn bkg">Đăng ký</button>
+
+                </form>
+            </div>
+            <div class="form sign_up">
+                <h3>Đăng nhập</h3>
+                <span>Với tài khoản của bạn</span>
+
+                <form action="" method="post" id="form_input">
+                    <div class="type">
+                        <input type="email" placeholder="Nhập email" name="" id="email">
 
                     </div>
                     <div class="type">
-                        <input type="password" placeholder="Mật khẩu" name="password" id="password">
+                        <input type="password" placeholder="Mật khẩu" name="" id="password">
                     </div>
 
                     <div class="forgot">
                         <span>Quên mật khẩu?</span>
                     </div>
-                    <button type="submit" class="btn bkg">Đăng nhập</button>
+                    <a href="home" class="btn bkg" type="button">Đăng nhập</a>
                 </form>
             </div>
 
-            <div class="form sign_up">
-
-            </div>
         </div>
 
         <div class="overlay">
@@ -62,7 +85,7 @@
                 <h3>Welcome Back!</h3>
                 <p>Để theo dõi chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
 
-                <a href="{{ route('register') }}" class="btn bkg">Đăng ký</a> <i class="bi bi-arrow-right"></i>
+                <button class="btn btnSign-in">Đăng ký <i class="bi bi-arrow-right"></i></button>
             </div>
 
             <div class="page page_signUp">
@@ -77,6 +100,7 @@
 
 
     <!-- link script -->
+    <script src="dangnhap/main.js"></script>
 </body>
 
 </html>

@@ -10,16 +10,16 @@
 
     <!-- plugins -->
 
-    <link rel="stylesheet" href="fontend/plugins/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="fontend/plugins/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="fontend/plugins/slick/slick.css">
+    <link rel="stylesheet" href="{{ asset('fontend/plugins/bootstrap/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('fontend/plugins/themify-icons/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('fontend/plugins/slick/slick.css') }}">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="fontend/css/style.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('fontend/css/style.css') }}" media="screen">
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="fontend/images/favicon.png" type="fontend/image/x-icon">
-    <link rel="icon" href="fontend/images/favicon.png" type="fontend/image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('fontend/images/favicon.png') }}" type="{{ asset('fontend/image/x-icon') }}">
+    <link rel="icon" href="{{ asset('fontend/images/favicon.png') }}" type="{{ asset('fontend/image/x-icon') }}">
 
     <meta property="og:title" content="Reader | Hugo Personal Blog Template" />
     <meta property="og:description" content="This is meta description" />

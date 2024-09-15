@@ -10,6 +10,16 @@ class News extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'category_id',
+        'image',
+        'name',
+        'title',
+        'view',
+        'date_add',
+        'content',
+    ];
+
     public function getAll(){
 
         $news = DB::table('news')
@@ -24,6 +34,7 @@ class News extends Model
     public function createNews($data){
 
          DB::table('news')->insert($data);
+
     }
 
     public function updateNews($data,$id){
@@ -33,6 +44,6 @@ class News extends Model
             ->update($data);
    }
 
-   
+
 
 }

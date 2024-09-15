@@ -1,5 +1,5 @@
 <a class="navbar-brand order-1" href="{{ route('member.home') }}">
-    <img class="img-fluid" width="100px" src="fontend/images/logo.png"
+    <img class="img-fluid" width="100px" src="{{ asset('fontend/images/logo.png') }}"
         alt="Reader | Hugo Personal Blog Template">
 </a>
 <div class="collapse navbar-collapse text-center order-lg-2 order-3" id="navigation">

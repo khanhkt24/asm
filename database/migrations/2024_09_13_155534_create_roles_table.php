@@ -11,16 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('news', function (Blueprint $table) {
+        Schema::create('roles', function (Blueprint $table) {
             $table->id();
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-            $table->string('image')->nullable();
             $table->string('name');
-            $table->string('title');
-            $table->unsignedInteger('view');
-            $table->date('date_add');
-            $table->text('content');
-            $table->unsignedBigInteger('category_id');
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -30,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('news');
+        Schema::dropIfExists('roles');
     }
 };

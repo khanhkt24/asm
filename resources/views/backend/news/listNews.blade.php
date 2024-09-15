@@ -15,7 +15,6 @@
                         <th>Ảnh</th>
                         <th>Lượt xem</th>
                         <th>Ngày nhập</th>
-                        <th>Nội dung</th>
                         <th>Danh mục</th>
                         <th>Thao tác</th>
                     </tr>
@@ -30,16 +29,16 @@
                             </td>
                             <td>{{ $item->view }}</td>
                             <td>{{ \Carbon\Carbon::parse($item->date_add)->format('d/m/Y') }}</td>
-                            <td>{{ $item->content }}</td>
+
                             <td>{{ $item->name_category }}</td>
-                            <td>
+                            <td class="">
                                 <a href="{{ route('new.edit',$item->id) }}">
                                     <button class="btn btn-warning">Sửa</button>
                                 </a>
                                 <form action="{{ route('new.destroy',$item->id) }}" method="POST">
                                     @method('DELETE')
                                     @csrf
-                                    <button class="btn btn-danger" type="submit" onclick="return confirm('bạn muốn xóa không ?')">Xóa</button>
+                                    <button class="btn btn-danger mb-2" type="submit" onclick="return confirm('bạn muốn xóa không ?')">Xóa</button>
 
                                 </form>
                             </td>

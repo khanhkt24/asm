@@ -12,6 +12,7 @@
                         <label for="" class="form-label">Hình ảnh </label>
                         <input type="file" class="form-control" name="image" id=""
                             placeholder="Chọn hình ảnh">
+                            <img src="{{ Storage::url($editCtrl->image) }}" alt="" width="150px" height="100px">
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Tên của tin </label>

@@ -9,16 +9,16 @@ xmlns="http://www.w3.org/2000/svg">
 <h2 class="h3 mb-4">BÀI ĐĂNG Ở INSTAGRAM</h2>
 
 <div class="instagram-slider">
-    <div class="instagram-post"><img src="fontend/images/instagram/1.jpg"></div>
-    <div class="instagram-post"><img src="fontend/images/instagram/2.jpg"></div>
-    <div class="instagram-post"><img src="fontend/images/instagram/4.jpg"></div>
-    <div class="instagram-post"><img src="fontend/images/instagram/3.jpg"></div>
-    <div class="instagram-post"><img src="fontend/images/instagram/2.jpg"></div>
-    <div class="instagram-post"><img src="fontend/images/instagram/1.jpg"></div>
-    <div class="instagram-post"><img src="fontend/images/instagram/3.jpg"></div>
-    <div class="instagram-post"><img src="fontend/images/instagram/4.jpg"></div>
-    <div class="instagram-post"><img src="fontend/images/instagram/2.jpg"></div>
-    <div class="instagram-post"><img src="fontend/images/instagram/4.jpg"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/1.jpg') }}"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/2.jpg') }}"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/4.jpg') }}"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/3.jpg') }}"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/2.jpg') }}"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/1.jpg') }}"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/3.jpg') }}"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/4.jpg') }}"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/2.jpg') }}"></div>
+    <div class="instagram-post"><img src="{{ asset('fontend/images/instagram/4.jpg') }}"></div>
 </div>
 </div>
 
@@ -31,7 +31,7 @@ xmlns="http://www.w3.org/2000/svg">
         </ul>
     </div>
     <div class="col-md-2 text-center mb-4">
-        <a href="index.html"><img class="img-fluid" width="100px" src="fontend/images/logo.png"
+        <a href="index.html"><img class="img-fluid" width="100px" src="{{ asset('fontend/images/logo.png') }}"
                 alt="Reader | Hugo Personal Blog Template"></a>
     </div>
     <div class="col-md-5 text-md-right text-center mb-4">

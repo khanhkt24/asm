@@ -6,91 +6,37 @@
             <div class="row justify-content-center">
                 <div class=" col-lg-9   mb-5 mb-lg-0">
                     <article>
-                        <div class="post-slider mb-4">
-                            <img src="fontend/images/post/post-2.jpg" class="card-img" alt="post-thumb">
-                        </div>
+                            <div class="post-slider mb-4">
+                                <img src="{{ Storage::url($data->image) }}" class="card-img-top" alt="post-thumb">
+                            </div>
 
-                        <h1 class="h2">Thu hút khách hàng Chiến lược tiếp thị tiếp thị vào cơ cấu nền kinh tế Mọi người.
-                        </h1>
-                        <ul class="card-meta my-3 list-inline">
-                            <li class="list-inline-item">
-                                <a href="author-single.html" class="card-meta-author">
-                                    <img src="fontend/images/john-doe.jpg">
-                                    <span>Hồng Đăng</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <i class="ti-timer"></i>10 lượt đọc
-                            </li>
-                            <li class="list-inline-item">
-                                <i class="ti-calendar"></i>15 july, 2024
-                            </li>
-                            <li class="list-inline-item">
-                                <ul class="card-meta-tag list-inline">
-                                    <li class="list-inline-item"><a href="tags.html">Tin mới nhất</a></li>
-                                    <li class="list-inline-item"><a href="tags.html">Giải trí</a></li>
-                                    <li class="list-inline-item"><a href="tags.html">Sức khỏe</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="content">
-                            <p>Không có gì bí mật khi ngành công nghiệp kỹ thuật số đang bùng nổ. Từ khởi nghiệp thú vị đến
-                                toàn cầu
-                                các thương hiệu, công ty đang tiếp cận với các đại lý kỹ thuật số, đáp ứng xu hướng mới
-                                khả năng có sẵn. Tuy nhiên, ngành này đang nhanh chóng trở nên quá đông đúc, đè nặng lên
-                                với các đại lý cung cấp dịch vụ tương tự - ít nhất là trên bề mặt. Sản xuất sáng tạo,
-                                các dự án mới là chìa khóa để nổi bật. Các dự án phụ độc đáo là nơi tốt nhất để
-                                đổi mới, nhưng việc cân bằng công việc sinh lợi về mặt thương mại và sáng tạo là điều khó
-                                khăn. Vì vậy, điều này
-                                bài viết nhìn vào</p>
-                            <p>Không có gì bí mật khi ngành công nghiệp kỹ thuật số đang bùng nổ. Từ khởi nghiệp thú vị đến
-                                toàn cầu
-                                các thương hiệu, công ty đang tiếp cận với các đại lý kỹ thuật số, đáp ứng xu hướng mới
-                                khả năng có sẵn. Tuy nhiên, ngành này đang nhanh chóng trở nên quá đông đúc, đè nặng lên
-                                với các đại lý cung cấp dịch vụ tương tự - ít nhất là trên bề mặt. Sản xuất sáng tạo,
-                                các dự án mới là chìa khóa để nổi bật. Các dự án phụ độc đáo là nơi tốt nhất để
-                                đổi mới, nhưng việc cân bằng công việc sinh lợi về mặt thương mại và sáng tạo là điều khó
-                                khăn. Vì vậy, điều này
-                                bài viết nhìn vào</p>
-                            brands, companies
-                            are reaching out to digital agencies, responding to the new possibilities available.
-                            However, the industryis fast becoming overcrowded, heaving with agencies offering
-                            similar services — on the surface, at least.Producing creative, fresh projects is the
-                            key to standing out. Unique side projects are the best place toinnovate, but balancing
-                            commercially and creatively lucrative work is tricky. So, this article looks at</p>
-                            <p>Không có gì bí mật khi ngành công nghiệp kỹ thuật số đang bùng nổ. Từ khởi nghiệp thú vị đến
-                                toàn cầu
-                                các thương hiệu, công ty đang tiếp cận với các đại lý kỹ thuật số, đáp ứng xu hướng mới
-                                khả năng có sẵn. Tuy nhiên, ngành này đang nhanh chóng trở nên quá đông đúc, đè nặng lên
-                                với các đại lý cung cấp dịch vụ tương tự - ít nhất là trên bề mặt. Sản xuất sáng tạo,
-                                các dự án mới là chìa khóa để nổi bật. Các dự án phụ độc đáo là nơi tốt nhất để
-                                đổi mới, nhưng việc cân bằng công việc sinh lợi về mặt thương mại và sáng tạo là điều khó
-                                khăn. Vì vậy, điều này
-                                bài viết nhìn vào</p>
-                            brands, companies
-                            are reaching out to digital agencies, responding to the new possibilities available.
-                            However, the industryis fast becoming overcrowded, heaving with agencies offering
-                            similar services — on the surface, at least.
-                            Producing creative, fresh projects is the key to standing out. Unique side projects are
-                            the best place toinnovate, but balancing commercially and creatively lucrative work is
-                            tricky. So, this article looks at</p>
-                            <p>Không có gì bí mật khi ngành công nghiệp kỹ thuật số đang bùng nổ. Từ khởi nghiệp thú vị đến
-                                toàn cầu
-                                các thương hiệu, công ty đang tiếp cận với các đại lý kỹ thuật số, đáp ứng xu hướng mới
-                                khả năng có sẵn. Tuy nhiên, ngành này đang nhanh chóng trở nên quá đông đúc, đè nặng lên
-                                với các đại lý cung cấp dịch vụ tương tự - ít nhất là trên bề mặt. Sản xuất sáng tạo,
-                                các dự án mới là chìa khóa để nổi bật. Các dự án phụ độc đáo là nơi tốt nhất để
-                                đổi mới, nhưng việc cân bằng công việc sinh lợi về mặt thương mại và sáng tạo là điều khó
-                                khăn. Vì vậy, điều này
-                                bài viết nhìn vào</p>
-                            brands, companies
-                            are reaching out to digital agencies, responding to the new possibilities available.
-                            However, the industryis fast becoming overcrowded, heaving with agencies offering
-                            similar services — on the surface, at least.
-                            Producing creative, fresh projects is the key to standing out. Unique side projects are
-                            the best place toinnovate, but balancing commercially and creatively lucrative work is
-                            tricky. So, this article looks at</p>
-                        </div>
+                            <h1 class="h2">{{ $data->title }}
+                            </h1>
+                            <ul class="card-meta my-3 list-inline">
+                                <li class="list-inline-item">
+                                    <a href="author-single.html" class="card-meta-author">
+                                        <img src="fontend/images/john-doe.jpg">
+                                        <span>Hồng Đăng</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="ti-timer"></i>{{ $data->view }}
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="ti-calendar"></i>{{ $data->date_add }}
+                                </li>
+                                <li class="list-inline-item">
+                                    <ul class="card-meta-tag list-inline">
+                                        <li class="list-inline-item"><a href="tags.html">{{ $data->category_id }}</a></li>
+                                        <li class="list-inline-item"><a href="tags.html">Giải trí</a></li>
+                                        <li class="list-inline-item"><a href="tags.html">Sức khỏe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="content">
+                                <p>{{ $data->content }}</p>
+                            </div>
+
                     </article>
 
                 </div>

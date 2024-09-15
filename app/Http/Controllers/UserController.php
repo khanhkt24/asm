@@ -2,24 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserRequest;
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-    public $user;
-
-    public function __construct()
-    {
-        $this->user = new User();
-    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $listUser = $this->user->getUser();
-        // dd( $listNew);
+        $listUser = User::with('roles')->get();
+        // dd( $listUser);
 
         return view('backend.users.listUser', ['list' => $listUser]);
     }
@@ -29,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -53,15 +50,31 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $data = User::findOrFail($id);
+        $listRole = Role::all();
+
+        return view('backend.users.edit',compact('data' , 'listRole'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UserRequest $request, string $id)
     {
-        //
+        $data = [
+            'name' => $request->name,
+            'type' => $request->type,
+        ];
+
+        // Tìm người dùng và cập nhật thông tin
+        $user = User::findOrFail($id);
+        $user->update($data);
+
+        // Sau khi cập nhật, gọi phương thức roles() trên đối tượng người dùng
+        $user->roles()->attach($request->roles);
+
+        return redirect()->route('user.index')->with('succcess','Sửa thành công');
+
     }
 
     /**
@@ -69,6 +82,7 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        User::findOrFail($id)->delete();
+        return redirect()->route('user.index')->with('succcess','Xóa thành công');
     }
 }

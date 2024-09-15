@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\fontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -25,17 +26,20 @@ class HomeController extends Controller
     public function loginView(){
         return view("fontend.layouts.login");
     }
-    public function detailView(){
-        return view("fontend.detail1");
+    // public function detailView(){
+    //     return view("fontend.detail1");
 
-    }
+    // }
 
     public function dashboard(){
             $query = DB::table('news')
-            ->select('id','name','title','date_add')
-            ->orderBy('date_add','DESC')
-            ->first();
+            ->get();
             // dd($query);
             return view('fontend.home',['data'=>$query]);
+    }
+
+    public function detail($id){
+        $data = News::findOrFail($id);
+        return view("fontend.detail1",compact('data'));
     }
 }

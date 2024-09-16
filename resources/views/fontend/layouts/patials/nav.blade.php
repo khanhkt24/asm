@@ -60,26 +60,32 @@
     </ul>
 </div>
 
-<div class="order-2 order-lg-3 d-flex align-items-center">
-    <select class="m-2 border-0 bg-transparent" id="select-language">
-        <option id="en" value="" selected>VN</option>
-        <option id="fr" value="">EN</option>
-    </select>
 
-    <!-- search -->
+<div class="order-2 order-lg-3 d-flex align-items-center">
     <form class="search-bar">
         <input id="search-query" name="s" type="search"
             placeholder="Tìm &amp; kiếm">
     </form>
+    <select class="m-2 border-0 bg-transparent" id="select-language">
+        <option id="en" value="" selected>{{ Auth::user()->name }}</option>
+        <option value="" ><a href="{{ route('admin.home') }}">Admin</a></option>
+        <option id="fr" value="">
+            <a href="{{ route('logout') }}">Logout</a>
+            {{-- <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form> --}}
+        </option>
+
+    </select>
+
+    <!-- search -->
+
 
     <button class="navbar-toggler border-0 order-1" type="button" data-toggle="collapse"
         data-target="#navigation">
         <i class="ti-menu"></i>
     </button>
 
-    <form action="{{ route('logout') }}" method="post">
-        @csrf
 
-        <button type="submit" class="btn btn-danger">Logout</button>
-    </form>
 </div>

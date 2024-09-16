@@ -101,7 +101,7 @@ class RoleController extends Controller
     public function update(RoleRequest $request, string $id)
     {
 
-        // Tìm vai trò theo ID
+
         $role = Role::findOrFail($id);
 
         // Dữ liệu cần cập nhật
@@ -109,18 +109,14 @@ class RoleController extends Controller
             'name' => $request->name,
             'description' => $request->description,
         ];
-
         // Bắt đầu transaction
         DB::beginTransaction();
-
         try {
             // Cập nhật vai trò
             $role->update($data);
-
             // Đồng bộ quyền với vai trò
             $listPermission = $request->permission_id;
             $role->permissions()->sync($listPermission);
-
             // Commit transaction
             DB::commit();
         } catch (Exception $e) {
@@ -135,10 +131,14 @@ class RoleController extends Controller
 
     /**
      * Remove the specified resource from storage.
+
      */
     public function destroy(string $id)
     {
-        Role::findOrFail($id)->delete();
+        $role = Role::findOrFail($id);
+        $role->permissions()->sync([]);
+        $role->delete();
+
         return redirect()->route('role.index')->with('succcess', 'Xóa thành công');
     }
 }

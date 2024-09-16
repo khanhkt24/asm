@@ -67,5 +67,17 @@ class User extends Authenticatable
         $news = DB::table('users')
             ->get();
         return $news;
+
+    }
+
+    function hasPermission($permission) {
+        //Cái này là kiểm tra user đó có những vai trò nào
+        //Từ những vai trò thì kiểm tra tiếp xem nó có những quyền nào
+        foreach ($this->roles as $role) {
+            if($role->permissions->where('Slug','=',$permission)->count() > 0) {
+                return true;
+            }
+        }
+        return false;
     }
 }

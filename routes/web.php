@@ -9,7 +9,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\IdAdmin;
 use App\Http\Middleware\IdMember;
-
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,11 +37,11 @@ Route::get("/detail/{id}", [HomeController::class,"detail"])->name('font.detal')
 
 //---------------------------------User---------------------------------------
 
-Route::get("/user", [UserController::class,"index"])->name("user.index");
+Route::get("/user", [UserController::class,"index"])->name("user.index")->can('user.list');
 
-Route::get("/user/{user}/edit", [UserController::class,"edit"])->name("user.edit");
-Route::put("/user/{user}", [UserController::class,"update"])->name("user.update");
-Route::delete("/user/{user}", [UserController::class,"destroy"])->name("user.destroy");
+Route::get("/user/{user}/edit", [UserController::class,"edit"])->name("user.edit")->can('user.edit');
+Route::put("/user/{user}", [UserController::class,"update"])->name("user.update")->can('user.edit');
+Route::delete("/user/{user}", [UserController::class,"destroy"])->name("user.destroy")->can('user.delete');
 
 //---------------------------------Permission---------------------------------------
 
@@ -66,11 +66,11 @@ Route::delete("/role/{role}", [RoleController::class,"destroy"])->name("role.des
 // Route::resource('add', NewController::class);
 // Route::get("/", [NewController::class,"index"])->name("new.index");
 
-Route::get("/new/create", [NewController::class,"create"])->name("new.create");
-Route::post("/new", [NewController::class,"store"])->name("new.store");
-Route::get("/new/{new}/edit", [NewController::class,"edit"])->name("new.edit");
-Route::put("/new/{new}", [NewController::class,"update"])->name("new.update");
-Route::delete("/new/{new}", [NewController::class,"destroy"])->name("new.destroy");
+Route::get("/new/create", [NewController::class,"create"])->name("new.create")->can('news.post');
+Route::post("/new", [NewController::class,"store"])->name("new.store")->can('news.post');
+Route::get("/new/{new}/edit", [NewController::class,"edit"])->name("new.edit")->can('news.edit');
+Route::put("/new/{new}", [NewController::class,"update"])->name("new.update")->can('news.edit');
+Route::delete("/new/{new}", [NewController::class,"destroy"])->name("new.destroy")->can('news.delete');
 
 /**
  * LOGIN

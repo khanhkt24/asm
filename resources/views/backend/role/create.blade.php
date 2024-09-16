@@ -27,7 +27,6 @@
                         {{-- @for ($i = 0; $i < 4; $i++) --}}
                             <div class="list-group">
                                 <div class="list-group-item nested-1">
-                                    <input type="checkbox" class="checkbox_wrapper form-check-input">
                                     <span class="text-uppercase fw-bold">{{ $key }}</span>
 
                                     @foreach ($value as $item)

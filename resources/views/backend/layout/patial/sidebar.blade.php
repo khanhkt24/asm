@@ -36,9 +36,9 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Quản lý tin:</h6>
-                <a class="collapse-item" href="buttons.html">Thêm mới tin</a>
+                <a class="collapse-item" href="{{ route('new.create') }}">Thêm mới tin</a>
                 <a class="collapse-item" href="{{ route('admin.home') }}">Hiển thị tin</a>
-                <a class="collapse-item" href="cards.html">Sửa tin</a>
+                <a class="collapse-item" href="{{ route('admin.home') }}">Sửa tin</a>
             </div>
         </div>
     </li>
